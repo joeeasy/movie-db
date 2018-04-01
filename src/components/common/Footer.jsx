@@ -72,10 +72,8 @@ const Footer = () => (
       </div>
       <div className="copyright">
         <p>
-          2017 &copy; Movie Star /
-          <a href="https://www.klevermedia.co.uk/">
-            Web design by Klever media
-          </a>
+          2017 &copy; Movie DB /
+          <a href="https://github.com/joeeasy">Joeeasy</a>
         </p>
       </div>
     </div>
