@@ -813,7 +813,6 @@ a.arrow-button:after {
   top: -1px;
   content: 'chevron_right';
   text-transform: none;
-  -webkit-font-feature-settings: 'chevron_right'
 }
 
 a.arrow-button:hover {
@@ -839,6 +838,7 @@ a.arrow-button:hover {
   transition: all 300ms ease-in-out;
   background: -webkit-linear-gradient(#fbbd61, #ec7532);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent
 }
 

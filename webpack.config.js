@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/App.jsx',
+    app: './src/App.js',
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [{
       loader: 'babel-loader',
-      test: /\.jsx$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/
     },
     {
@@ -26,9 +26,13 @@ module.exports = {
     }
   ]
   },
+  resolve: {
+    extensions: ['.jsx', '.js']
+  },
   devtool: "cheap-module-eval-source-map",
   devServer: {
     contentBase: path.join(__dirname, "public"),
-    port: 3000
+    port: 3100,
+    historyApiFallback: true
   }
 }
