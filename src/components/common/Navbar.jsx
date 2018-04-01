@@ -54,24 +54,25 @@ class Navbar extends Component {
           <div className="navbar-collapse collapse">
             <ul id="menu-primary" className="nav navbar-nav">
               <li className="active">
-                <Link to="index-2.html">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="whats-on.html">What's on</Link>
+                <Link to="/Discover">Discover</Link>
               </li>
               <li>
-                <Link to="shortcodes.html">Shortcodes</Link>
+                <Link to="/popular-clips">Popular Clips</Link>
               </li>
               <li className="dropdown">
-                <Link to="news.html">News</Link>
+                <Link to="#">More</Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="news-single.html">News single</Link>
+                    <Link to="/Movies">Movies & Tv</Link>
+                    <Link to="/watchlist">WatchLiist</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="contact.html">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

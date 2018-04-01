@@ -9,7 +9,7 @@ class Header extends Component {
         data-ride="carousel"
       >
         <img
-          src="images/scroll-arrow.svg"
+          src="assets/images/scroll-arrow.svg"
           alt="Scroll down"
           className="scroll"
         />
