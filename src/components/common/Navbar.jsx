@@ -14,12 +14,12 @@ class Navbar extends Component {
             <div className="row">
               <div className="col-sm-12">
                 <div className="search">
-                  <Link to="#">
+                  <Link to="/search">
                     <i className="material-icons">search</i>
                   </Link>
                 </div>
                 <div className="tel">
-                  <Link to="tel:03301234567">
+                  <Link to="tel:07059972180">
                     <i className="material-icons">phone in talk</i> 07059972180
                   </Link>
                 </div>
@@ -29,11 +29,7 @@ class Navbar extends Component {
         </div>
         <div className="container">
           <div className="navbar-header">
-            <Link
-              to="index-2.html"
-              className="logo"
-              title="Craft beer landing page"
-            >
+            <Link to="/home" className="logo" title="Craft beer landing page">
               <img
                 src="assets/images/logo.svg"
                 alt="Craft Beer HTML Template"
@@ -54,24 +50,25 @@ class Navbar extends Component {
           <div className="navbar-collapse collapse">
             <ul id="menu-primary" className="nav navbar-nav">
               <li className="active">
-                <Link to="index-2.html">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
               <li>
-                <Link to="whats-on.html">What's on</Link>
+                <Link to="/Discover">Discover</Link>
               </li>
               <li>
-                <Link to="shortcodes.html">Shortcodes</Link>
+                <Link to="/popular-clips">Popular Clips</Link>
               </li>
               <li className="dropdown">
-                <Link to="news.html">News</Link>
+                <Link to="#">More</Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="news-single.html">News single</Link>
+                    <Link to="/movie&tv">Movies & Tv</Link>
+                    <Link to="/movie/123">WatchLiist</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="contact.html">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
