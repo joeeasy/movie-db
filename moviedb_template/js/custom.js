@@ -415,4 +415,5 @@ jQuery(function ($) {
     $(this).css('opacity', '1').siblings().css('opacity', '.35');
     return false;
   });
+  console.clear();
 });

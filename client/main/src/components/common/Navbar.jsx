@@ -63,7 +63,7 @@ class Navbar extends Component {
                 <ul className="dropdown-menu">
                   <li>
                     <Link to="/movie&tv">Movies & Tv</Link>
-                    <Link to="/movie/123">WatchLiist</Link>
+                    <Link to={"movie/" + "123"}>WatchLiist</Link>
                   </li>
                 </ul>
               </li>

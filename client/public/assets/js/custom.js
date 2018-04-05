@@ -33,7 +33,7 @@ jQuery(function ($) {
   });
   $(window).on('load resize scroll', function () {
     $('.discover').not('.slick-initialized').slick({
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
       slidesToShow: 4,
       centerPadding: '60px',

@@ -1,13 +1,17 @@
 // entry -> output
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/App.js',
+    app: './client/main/src/App.js',
   },
+  plugins: [new HtmlWebpackPlugin({
+    template: 'client/public/index.html'
+  })],
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'client/public'),
     filename: 'bundle.js'
   },
   module: {
@@ -31,8 +35,8 @@ module.exports = {
   },
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public"),
-    port: 3300,
+    contentBase: path.join(__dirname, "client/public"),
+    port: 3500,
     historyApiFallback: true
   }
 }
