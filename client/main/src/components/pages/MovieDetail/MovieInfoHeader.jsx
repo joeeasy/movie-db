@@ -1,12 +1,18 @@
 import React, { Component } from "react";
-
+import MovieEndPoint from "../../../../utils/EndPoints";
 class MovieInfoHeader extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div
         id="content_hero"
         style={{
-          backgroundImage: "url(" + "assets/images/hero-single-movie.jpg" + ")"
+          backgroundImage:
+            "url(" +
+            MovieEndPoint.imageLoader(this.props.movieInfo.backdrop_path) +
+            ")"
         }}
       >
         {/* <img
@@ -25,13 +31,11 @@ class MovieInfoHeader extends Component {
             data-translatey="100"
           >
             <div className="col-md-9">
-              <span className="title">Action, Adventure, Sci-Fi</span>
-              <h1>Transformers: The Last Knight</h1>
-              <p>
-                Humans and Transformers are at war, Optimus Prime is gone. The
-                key to saving our future lies buried in the secrets of the past,
-                in the hidden history of Transformers on Earth.
-              </p>
+              <span className="title">
+                {/* {this.props.movieInfo.genres.map(item => item.name + ", ")} */}
+              </span>
+              <h1>{this.props.movieInfo.title}</h1>
+              <p>{this.props.movieInfo.overview}</p>
               <div className="buttons">
                 <span className="certificate">PG</span>
                 <a

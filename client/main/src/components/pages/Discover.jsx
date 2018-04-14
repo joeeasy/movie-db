@@ -20,7 +20,7 @@ const Discover = props => (
                   <li className="ui-state-active">
                     <Link to={"#one"}>In Movie</Link>
                   </li>
-                  <li>
+                  <li style={{ display: "inline-block" }}>
                     <Link to={"#two"}>TV Series</Link>
                   </li>
                 </ul>
