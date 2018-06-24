@@ -2132,6 +2132,7 @@ footer .copyright a:hover {
   color: #ec7532
 }
 
+
 @-webkit-keyframes Heading {
   0% {
     transform: translateY(-30px);
@@ -2285,7 +2286,7 @@ footer .copyright a:hover {
     opacity: 0
   }
   100% {
-    transform: scale(1) opacity:1
+    transform: scale(1) opacity;
   }
 }
 
@@ -2533,4 +2534,22 @@ footer .copyright a:hover {
   .tabs.pill-style ul li:last-of-type a {
     border-radius: 0 0 30px 30px
   }
+}
+
+
+.mw-800 {
+  width: 800px !important;
+  height: 45px;
+  font-size: 24px;
+}
+
+form .btn {
+  border-radius: 5px;
+  height: 45px;
+}
+
+.form-elements {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
