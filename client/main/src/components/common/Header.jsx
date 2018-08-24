@@ -7,7 +7,7 @@ import CarouselItems from "./CarouselItem";
 class Header extends Component {
   constructor(props) {
     super(props);
-    console.log(props.results);
+    // console.log(props.results);
   }
   render() {
     return (

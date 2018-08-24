@@ -19,6 +19,7 @@ class Home extends Component {
     // this.componentDidMount = this.componentDidMount.bind(this);
   }
   // ======
+  
 
   //------------Adding life cycle methods
 
